@@ -32,6 +32,7 @@ module.exports = function(config) {
     },
 
     webpack: {
+      cahce: true,
       module: {
         loaders: [
           {
@@ -49,6 +50,14 @@ module.exports = function(config) {
         'react/lib/ExecutionEnvironment': true,
         'react/lib/ReactContext': true,
         'react/addons': true
+      },
+      resolve: {
+        extensions: [
+          '',
+          '.js',
+          '.json',
+          '.jsx'
+        ]
       }
     },
 
