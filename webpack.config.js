@@ -9,6 +9,11 @@ module.exports = {
   entry: [
     "./src/index.js"
   ],
+  externals: {
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': true,
+    'react/addons': true
+  },
   output: {
     path: __dirname + "/dist",
     filename: "index_bundle.js"
