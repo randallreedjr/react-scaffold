@@ -1,10 +1,10 @@
 import React from 'react';
 
+import HelloWorldContainer from './HelloWorldContainer';
+
 function App() {
   return (
-    <div>
-      Welcome to React!
-    </div>
+    <HelloWorldContainer />
   );
 }
 
